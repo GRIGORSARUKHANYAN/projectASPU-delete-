@@ -34,6 +34,8 @@ app.post("/contact", async (req, res) => {
     !req.body.text ||
     !isValidEmail(req.body.email)
   ) {
+    console.log(req.body);
+
     return res.status(400).send("data is invalid");
   }
 
@@ -43,7 +45,7 @@ app.post("/contact", async (req, res) => {
 });
 
 app.post("/lesson", authMiddleware, async (req, res) => {
-  if (!req.body || !req.body.title || !req.body.text) {
+  if (!req.body || !req.body.title || !req.body.text) {    
     return res.status(400).send("data is invalid");
   }
   const lesson = new Lesson(req.body);
