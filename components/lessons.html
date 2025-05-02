@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teach+</title>
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/lessons.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="info">
+            <div class="logo">
+                <img src="../image/logo.png" alt="logo">
+                <h1>teach+</h1>
+            </div>
+            <div class="title">
+                <span>
+                    ԻՆՔՆՈՒՐՈՒՅՆ ԱՇԽԱՏԱՆՔՆԵՐ ԻՆՖՈՐՄԱՏԻԿԱՅԻՑ
+                </span>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li onclick="location.href='welcome.html'">Գլխավոր</li>
+                    <li onclick="location.href='materials.html'">Տեսական նյութեր</li>
+                    <li onclick="location.href='videos.html'">Տեսադասեր</li>
+                    <li onclick="location.href='lessons.html'">Գործնական աշխատանքներ</li>
+                    <li onclick="location.href='tests.html'">Թեստեր</li>
+                    <li  onclick="location.href='welcome.html'">Կապ մեզ հետ</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="section1">
+        <h1>Գործնական աշխատանքներ</h1>
+        <section class="cards">
+
+            <ol class="cards__container" title="Blog entries">
+                <li class="card" onclick="openFile()">
+                  <div class="card__thumb"><img class="animate" src="https://picsum.photos/500/500"/></div>
+                  <div class="card__content">
+                    <h3 class="card__title">Title </h3>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos.</p><a class="card__btn" aria-label="Read more about Card Title 1" href="#"><img src="https://raw.githubusercontent.com/Javieer57/CODEPEN-gnarly-grid-cards/4a2aca9a4c61126b21ebdbc95119c4620fe61636/assets/arrow-right-solid.svg" alt=""/></a>
+                    <p class="read-more">
+                      <a href="../materials/lessons.pdf"  target="_blank">Դիտել</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="card__thumb"><img class="animate" src="https://picsum.photos/500/500"/></div>
+                  <div class="card__content">
+                    <h3 class="card__title">Title </h3>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis.</p><a class="card__btn" aria-label="Read more about Card Title 2" href="#"><img src="https://raw.githubusercontent.com/Javieer57/CODEPEN-gnarly-grid-cards/4a2aca9a4c61126b21ebdbc95119c4620fe61636/assets/arrow-right-solid.svg" alt=""/></a>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="card__thumb"><img class="animate" src="https://picsum.photos/500/500"/></div>
+                  <div class="card__content">
+                    <h3 class="card__title">Title </h3>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero.</p><a class="card__btn" aria-label="Read more about Card Title 3" href="#"><img src="https://raw.githubusercontent.com/Javieer57/CODEPEN-gnarly-grid-cards/4a2aca9a4c61126b21ebdbc95119c4620fe61636/assets/arrow-right-solid.svg" alt=""/></a>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="card__thumb"><img class="animate" src="https://picsum.photos/500/500"/></div>
+                  <div class="card__content">
+                    <h3 class="card__title">Title </h3>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero.</p><a class="card__btn" aria-label="Read more about Card Title 4" href="#"><img src="https://raw.githubusercontent.com/Javieer57/CODEPEN-gnarly-grid-cards/4a2aca9a4c61126b21ebdbc95119c4620fe61636/assets/arrow-right-solid.svg" alt=""/></a>
+                  </div>
+                </li>
+              </ol>
+        </section>
+
+
+           
+    </div>
+          
+
+    <script>
+      function openFile() {
+      window.open('../materials/lessons.pdf', '_blank');
+    }
+  </script>
+</body>
+</html>
