@@ -1,12 +1,8 @@
-
 function getContact(event) {
-    // event.preventDefault(); // Prevent default form submission
-
-    // Send POST request
     let token = localStorage.getItem("accesToken");
 
     fetch('http://localhost:3000/lesson', {
-        method: 'Get',
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
@@ -21,26 +17,22 @@ function getContact(event) {
         })
         .then(data => {
             console.log('Registration successful:', data);
-            // Your code here
             for (let i = 0; i < data.length; i++) {
-                document.getElementById("messages").innerHTML +=
+                document.getElementById("lessons").innerHTML +=
                     `
-                <div class="container">
-                    <h3>${data[i].title}</h3>
-                    <p class="text">${data[i].text}</p>
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <h3 class="lesson-title">${data[i].title}</h3>
+                        <span class="lesson-date">${new Date().toLocaleDateString()}</span>
+                    </div>
+                    <p class="lesson-text">${data[i].text}</p>
                 </div>
-                <br> 
                 `;
             }
-
-            let email = document.getElementById("messages").innerHTML
-
-            // Optionally, redirect to another page or show a success message
         })
         .catch(error => {
             console.error('Error ', error);
-            // Optionally, display an error message to the user
         });
 }
 
-getContact()
+getContact();

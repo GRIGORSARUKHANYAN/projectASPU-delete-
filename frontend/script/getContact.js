@@ -20,17 +20,20 @@ function getContact(event) {
             return response.json();
         })
         .then(data => {
+            console.log(data);
+            
             console.log('Registration successful:', data);
             // Your code here
             for (let i = 0; i < data.length; i++) {
                 document.getElementById("contacts").innerHTML +=
-                    `
-                <div class="container">
-                    <h3>${data[i].email}</h3>
-                    <p>${data[i].text}</p>
+                `
+                <div class="message-card">
+                    <div class="message-name">${data[i].name}</div>
+                    <div class="message-email">${data[i].email}</div>
+                    <div class="message-text">${data[i].text}</div>
                 </div>
-                <br> 
                 `;
+            
             }
 
             let email = document.getElementById("contacts").innerHTML

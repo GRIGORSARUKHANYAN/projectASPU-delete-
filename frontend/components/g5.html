@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teach+</title>
+  <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/lessons.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/games.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="info">
+      <div class="logo">
+        <img src="../image/logo.png" alt="logo">
+        <h1>teach+</h1>
+      </div>
+      <div class="title">
+        <span>
+          ԻՆՔՆՈՒՐՈՒՅՆ ԱՇԽԱՏԱՆՔՆԵՐ ԻՆՖՈՐՄԱՏԻԿԱՅԻՑ
+        </span>
+      </div>
+    </div>
+    <nav>
+      <div class="menu">
+          <ul>
+              <li onclick="location.href='welcome.html'">Գլխավոր</li>
+          <select  onchange="location.href=this.value">
+                <option value="materials5.html">5֊րդ դասարանի տեսական նյութեր</option>
+                <option value="materials6.html">6֊րդ դասարանի տեսական նյութեր</option>
+          </select>
+              <li onclick="location.href='videos.html'">Տեսադասեր</li>
+              <select  onchange="location.href=this.value">
+                <option value="lessons5.html">5֊րդ դասարանի Գործնական աշխատանքներ</option>
+                <option value="lessons6.html">6֊րդ դասարանի Գործնական աշխատանքներ</option>
+              </select>
+                                  <select  onchange="location.href=this.value">
+                        <option value="tests5.html">5֊րդ դասարանի թեստեր</option>
+                        <option value="tests6.html">6֊րդ դասարանի թեստեր</option>
+                      </select> 
+              <li><a href="welcome.html#contactus">Կապ մեզ հետ</a></li>
+
+              <select  onchange="location.href=this.value">
+                <option value="games5.html">5֊րդ դասարանի խաղեր</option>
+                <option value="games6.html">6֊րդ դասարանի խաղեր</option>
+              </select> 
+
+              <li onclick="location.href='newLessons.html'">նոր դասեր</li>
+              <li id ="login" onclick="location.href='login.html'">մուտք</li>
+              <select id="isNotAdmin" onchange="location.href=this.value">
+                  <option ></option>
+                  <option value="createNewLessons.html">Դասերի ստեղծում</option>
+                  <option value="lookContact.html">Նամակներ</option>
+                  <option value="logout">Դուրս գալ</option>
+                </select>  
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+
+
+
+
+
+
+  <div class="games-section">
+    <div class="games-container">
+      <div class="games-title">Խաղա Ուղիղ Կայքում 📚🎮</div>
+  
+      <div class="game-frame">
+        <iframe style="max-width:100%" src="https://wordwall.net/embed/08941aea19d0491f9110b32638ddc1d5?themeId=65&templateId=8&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>      </div>
+      <div class="game-frame">
+        <iframe style="max-width:100%" src="https://wordwall.net/embed/f95ab1fc05604db0b4952334106fdbff?themeId=44&templateId=36&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="game-frame">
+        <iframe style="max-width:100%" src="https://wordwall.net/embed/078cd754ff3343d08fab51767ab8eae8?themeId=46&templateId=3&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <script src="../script/auth.js"></script>
+
+</body>
+
+</html>

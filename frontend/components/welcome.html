@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -32,15 +33,38 @@
             <div class="menu">
                 <ul>
                     <li onclick="location.href='welcome.html'">Գլխավոր</li>
-                    <li onclick="location.href='materials.html'">Տեսական նյութեր</li>
+                <select  onchange="location.href=this.value">
+                <option value="materials5.html">5֊րդ դասարանի տեսական նյութեր</option>
+                <option value="materials6.html">6֊րդ դասարանի տեսական նյութեր</option>
+          </select>
                     <li onclick="location.href='videos.html'">Տեսադասեր</li>
-                    <li onclick="location.href='lessons.html'">Գործնական աշխատանքներ</li>
-                    <li onclick="location.href='tests.html'">Թեստեր</li>
-                    <li><a href="#contactus">Կապ մեզ հետ</a></li>
-                    <li onclick="location.href='games.html'">Խաղեր</li>
-                </ul>
-            </div>
-        </nav>
+                    <select  onchange="location.href=this.value">
+                <option value="lessons5.html">5֊րդ դասարանի Գործնական աշխատանքներ</option>
+                <option value="lessons6.html">6֊րդ դասարանի Գործնական աշխատանքներ</option>
+              </select>
+                                        <select  onchange="location.href=this.value">
+                        <option value="tests5.html">5֊րդ դասարանի թեստեր</option>
+                        <option value="tests6.html">6֊րդ դասարանի թեստեր</option>
+                      </select> 
+                    <li><a href="welcome.html#contactus">Կապ մեզ հետ</a></li>
+                                  <select  onchange="location.href=this.value">
+                <option value="games5.html">5֊րդ դասարանի խաղեր</option>
+                <option value="games6.html">6֊րդ դասարանի խաղեր</option>
+              </select>
+                    <li onclick="location.href='newLessons.html'">նոր դասեր</li>
+                    <li id ="login" onclick="location.href='login.html'">մուտք</li>
+                    <select id="isNotAdmin" onchange="location.href=this.value">
+                        <option ></option>
+                        <option value="createNewLessons.html">Դասերի ստեղծում</option>
+                        <option value="lookContact.html">Նամակներ</option>
+                        <option value="logout">Դուրս գալ</option>
+                      </select>  
+                    </ul>
+                </div>
+            </nav>
+            <!-- <li title="Դաս ստեղծում" onclick="location.href='createNewLessons.html'">➕</li>
+            <li title="Նամակներ" onclick="location.href='lookContact.html'">📥</li>
+            <li title="Դուրս գալ" onclick="location.href='lookContact.html'">🚪</li> -->
     </header>
     <div class="welcome">
         <div class="bgcolor">
@@ -569,6 +593,8 @@
 
 
     <script src="../script/request.js"></script>
+    <script src="../script/auth.js"></script>
+
 
 </body>
 

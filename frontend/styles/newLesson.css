@@ -1,0 +1,51 @@
+.lesson-card {
+    background: linear-gradient(145deg, #fffbec, #e6f7ff);
+    border-left: 10px solid #5dade2;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 850px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.lesson-card:hover {
+    transform: scale(1.02);
+}
+
+.lesson-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.lesson-date {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: #5dade2;
+    color: white;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
+.lesson-text {
+    font-size: 18px;
+    color: #2c3e50;
+    line-height: 1.7;
+    padding-top: 10px;
+}
+
+.lesson-card::after {
+    content: "📘";
+    font-size: 70px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    opacity: 0.08;
+}
