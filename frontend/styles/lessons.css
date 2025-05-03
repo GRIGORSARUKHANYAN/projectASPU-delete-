@@ -20,21 +20,54 @@
 }
 
 .cards {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  display: grid;
   margin: 30px 0;
-  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  max-width: 1193px;
+}
 
+@media (width < 990px) {
+  .cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (width < 840px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width < 680px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width < 460px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 320px) {
+  .cards {
+    display: block;
+  }
 }
 
 .card--1 .card__img,
 .card--1 .card__img--hover {
   background-color: #868686;
-  /* background-image: url('../image/librarybooks.jpg'); */
 }
 
+.card__banner {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 
 .card__like {
   width: 18px;
@@ -95,16 +128,17 @@
   margin-right: 25px;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
-  width: 33.3%;
+  width: 100%;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .card:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-  transform: scale(1.10, 1.10);
+  transform: scale(1.05);
 }
 
 .card__info {
