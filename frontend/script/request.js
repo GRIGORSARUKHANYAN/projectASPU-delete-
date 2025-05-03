@@ -1,34 +1,34 @@
 
 function login(event) {
-    event.preventDefault(); 
+  event.preventDefault();
 
-    const formData = {
-        email: document.getElementById("email").value,
-        password: document.getElementById("password").value
-    };
+  const formData = {
+    email: document.getElementById("email").value,
+    password: document.getElementById("password").value
+  };
 
-    fetch('http://localhost:3000/login', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
+  fetch('http://localhost:3000/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
     .then(response => {
-        if (!response.ok) {
-            console.log("Asdas");
-            let error = document.getElementById("error").innerHTML="email or password is invalid"
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
+      if (!response.ok) {
+        console.log("Asdas");
+        let error = document.getElementById("error").innerHTML = "email or password is invalid"
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
     })
     .then(data => {
-        console.log('Registration successful:', data);
-        localStorage.setItem("accesToken", data.accessToken);
-        window.location.href = "./welcome.html";
+      console.log('Registration successful:', data);
+      localStorage.setItem("accesToken", data.accessToken);
+      window.location.href = "./welcome.html";
     })
     .catch(error => {
-        console.error('Error ', error);
+      console.error('Error ', error);
 
     });
 }
@@ -74,7 +74,7 @@ function createLEsson(event) {
 
 
 function contact(event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
   const formData = {
     name: document.getElementById("name").value,
@@ -82,7 +82,7 @@ function contact(event) {
     text: document.getElementById("text").value,
   };
 
-console.log(formData);
+  console.log(formData);
 
   fetch("http://localhost:3000/contact", {
     method: "POST",
@@ -92,7 +92,7 @@ console.log(formData);
     body: JSON.stringify(formData),
   })
     .then((response) => {
-      
+
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
