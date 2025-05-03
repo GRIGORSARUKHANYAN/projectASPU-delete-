@@ -9,7 +9,67 @@
     <link rel="stylesheet" href="../styles/tests.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/createNewLesson.css">
 
+<style>
+
+
+
+.lesson-form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fefefe;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.lesson-form h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.lesson-form input[type="text"],
+.lesson-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dcdcdc;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.lesson-form input[type="text"]:focus,
+.lesson-form textarea:focus {
+    border-color: #5dade2;
+}
+
+.lesson-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.lesson-form input[type="submit"] {
+    background-color: #5dade2;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lesson-form input[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+</style>
 </head>
 
 <body>
@@ -29,26 +89,46 @@
             <div class="menu">
                 <ul>
                     <li onclick="location.href='welcome.html'">Գլխավոր</li>
-                    <li onclick="location.href='materials.html'">Տեսական նյութեր</li>
+                <select  onchange="location.href=this.value">
+                <option value="materials5.html">5֊րդ դասարանի տեսական նյութեր</option>
+                <option value="materials6.html">6֊րդ դասարանի տեսական նյութեր</option>
+          </select>
                     <li onclick="location.href='videos.html'">Տեսադասեր</li>
-                    <li onclick="location.href='lessons.html'">Գործնական աշխատանքներ</li>
-                    <li onclick="location.href='tests.html'">Թեստեր</li>
-                    <li onclick="location.href='welcome.html'">Կապ մեզ հետ</li>
-                </ul>
-            </div>
-        </nav>
+                    <select  onchange="location.href=this.value">
+                <option value="lessons5.html">5֊րդ դասարանի Գործնական աշխատանքներ</option>
+                <option value="lessons6.html">6֊րդ դասարանի Գործնական աշխատանքներ</option>
+              </select>
+                                        <select  onchange="location.href=this.value">
+                        <option value="tests5.html">5֊րդ դասարանի թեստեր</option>
+                        <option value="tests6.html">6֊րդ դասարանի թեստեր</option>
+                      </select> 
+                    <li><a href="welcome.html#contactus">Կապ մեզ հետ</a></li>
+                                  <select  onchange="location.href=this.value">
+                <option value="games5.html">5֊րդ դասարանի խաղեր</option>
+                <option value="games6.html">6֊րդ դասարանի խաղեր</option>
+              </select>
+                    <li onclick="location.href='newLessons.html'">նոր դասեր</li>
+                    <li id ="login" onclick="location.href='login.html'">մուտք</li>
+                    <select id="isNotAdmin" onchange="location.href=this.value">
+                        <option ></option>
+                        <option value="createNewLessons.html">Դասերի ստեղծում</option>
+                        <option value="lookContact.html">Նամակներ</option>
+                        <option value="logout">Դուրս գալ</option>
+                      </select>  
+                    </ul>
+                </div>
+            </nav>
     </header>
-    <div>
+    <div class="lesson-form">
+        <h2>Ստեղծել նոր դասի նյութ ✏️</h2>
         <form onsubmit="createLEsson(event)">
-
-            <input type="text" class="form-control" id="title" placeholder="title">
-            <textarea id="text" type="text" class="form-control" id="text" placeholder="text"></textarea>
-            <input class="btn btn-primary w-100 py-3" type="submit" value="Create Lesson">
-
+            <input type="text" id="title" placeholder="Դասի վերնագիր">
+            <textarea id="text" placeholder="Դասի նյութ"></textarea>
+            <input type="submit" value="Ստեղծել դաս">
         </form>
     </div>
 
-
+    <script src="../script/auth.js"></script>
     <script src="../script/request.js"></script>
 </body>
 

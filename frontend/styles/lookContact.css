@@ -1,0 +1,48 @@
+.message-card {
+    background: linear-gradient(135deg, #cce7ff, #b3cde0); /* Light blue to a darker blue gradient */
+    border: 2px solid #82b3c9; /* Darker blue border */
+    margin: 25px auto;
+    padding: 20px 25px;
+    border-radius: 20px;
+    max-width: 750px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    font-family: "Comic Neue", cursive, sans-serif;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.message-card:hover {
+    transform: scale(1.02);
+}
+
+.message-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #01579b; /* Dark blue */
+    margin-bottom: 10px;
+}
+
+.message-email {
+    font-size: 15px;
+    font-style: italic;
+    color: #2c387e; /* A more muted dark blue */
+    margin-bottom: 12px;
+}
+
+.message-text {
+    font-size: 16px;
+    color: #263238; /* Dark greyish-blue */
+    line-height: 1.6;
+    background: #ffffffcc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.message-card::after {
+    content: "📮";
+    position: absolute;
+    font-size: 50px;
+    bottom: 15px;
+    right: 20px;
+    opacity: 0.04;
+}

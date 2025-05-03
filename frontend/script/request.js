@@ -36,7 +36,7 @@ function login(event) {
 
 
 
-function createLEsson(event) {
+function createLesson(event) {
   let token = localStorage.getItem("accesToken");
   event.preventDefault();
 
