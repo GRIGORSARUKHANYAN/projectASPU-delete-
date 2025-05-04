@@ -1,15 +1,7 @@
-# projectASPU-delete-
+# Project ASPU
 
-Xaxeri link:
-Subject: 5-րդ դասարան xaxer:
-https://wordwall.net/resource/90812515
-https://wordwall.net/resource/90656800
-https://wordwall.net/resource/90655477
-
-
-Tester: 
-Subject: 5-րդ դասարան թեստեր
-
+# Tester: 
+## Subject: 5-րդ դասարան թեստեր:
 https://docs.google.com/forms/d/e/1FAIpQLSdk5ix0-fToMmDs56Y_7pLcxwzi_eMY8bnFeEsuNBO1lpavXQ/viewform?usp=header
 
 https://docs.google.com/forms/d/e/1FAIpQLSeFPY59nL1EfR16xzA1TMBGDy3zSmeyFRpvWlOtRQcQd4jpkA/viewform?usp=header
@@ -19,9 +11,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScgwk62VGZKsH_y15uBsQIR3XDssjACGdyyYOMs
 https://docs.google.com/forms/d/e/1FAIpQLScd0eroFKgkMjTUUEcJgjCxJaPZ81oTrD_3KIVg1eYxCLJVFw/viewform?usp=header
 
 
-Tester: 
-Subject: 6 dasaran tester
-
+## Subject: 6 dasaran tester:
 https://docs.google.com/forms/d/e/1FAIpQLSfh-kV0zKwK3Gjf4SVAwGhHXCw5ILRHngBjixYtt6DcJlpKcA/viewform?usp=header
 
 https://docs.google.com/forms/d/e/1FAIpQLSfEh9KqRMLL9x6rC6Mnhhj5tPX5glT-ryTJbQDVsseYks7p4Q/viewform?usp=header
