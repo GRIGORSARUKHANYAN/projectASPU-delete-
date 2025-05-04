@@ -40,6 +40,7 @@ header {
 nav {
   background: #11ABBA;
   width: 100%;
+  z-index: 99999;
 }
 
 .navigation {
