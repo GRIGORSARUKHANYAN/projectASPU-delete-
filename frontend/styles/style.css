@@ -71,6 +71,7 @@ nav {
 
   &:hover {
     .navigation__link_container_dropdown {
+      width: max-content;
       padding: 10px;
       display: block;
       border-end-end-radius: 10px;
