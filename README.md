@@ -1,15 +1,6 @@
 # Project ASPU
 
 # Tester: 
-## Subject: 5-րդ դասարան թեստեր:
-https://docs.google.com/forms/d/e/1FAIpQLSdk5ix0-fToMmDs56Y_7pLcxwzi_eMY8bnFeEsuNBO1lpavXQ/viewform?usp=header
-
-https://docs.google.com/forms/d/e/1FAIpQLSeFPY59nL1EfR16xzA1TMBGDy3zSmeyFRpvWlOtRQcQd4jpkA/viewform?usp=header
-
-https://docs.google.com/forms/d/e/1FAIpQLScgwk62VGZKsH_y15uBsQIR3XDssjACGdyyYOMsOk9ekzJe3g/viewform?usp=header
-
-https://docs.google.com/forms/d/e/1FAIpQLScd0eroFKgkMjTUUEcJgjCxJaPZ81oTrD_3KIVg1eYxCLJVFw/viewform?usp=header
-
 
 ## Subject: 6 dasaran tester:
 https://docs.google.com/forms/d/e/1FAIpQLSfh-kV0zKwK3Gjf4SVAwGhHXCw5ILRHngBjixYtt6DcJlpKcA/viewform?usp=header
