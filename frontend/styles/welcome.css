@@ -124,7 +124,6 @@ form {
 }
 
 form .formtitle {
-  width: 200px;
   font-family: "Pacifico", cursive;
   color: #212529;
   font-size: 2.5rem;
@@ -194,4 +193,27 @@ form .icon {
   box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
   background-size: 100% 100%;
   transform: translateY(-0.15em);
+}
+
+.contactus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formtitle {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.d-block {
+  display: block;
+}
+
+#formMessage {
+  resize: none;
 }
