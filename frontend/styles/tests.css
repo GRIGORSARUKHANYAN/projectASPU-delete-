@@ -1,41 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
 }
-.section1{
-    width: 100%;
-    padding: 2%;
-    /* height: 700px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+.section1 {
+  width: 100%;
+  padding: 2%;
+  /* height: 700px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.section1 h1{
+
+.section1 h1 {
   margin: 15px 0 40px;
 }
-.cards {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
 
+.cards {
+  width: 100%;
 }
-.box{
-  width: 250px;
-  height: 150px;
-  padding: 1% 2%;
-  background-color: rgb(215, 240, 250);
-  border-radius: 20px;
-  margin: 0 15px;
+
+.test+.test {
+  margin-top: 15px;
 }
-section{
-  margin: 15px 0;
-}
-a{
+
+.test {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid #0002;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
   text-decoration: none;
   color: black;
+  display: flex;
+  gap: 10px;
+  background-color: rgb(215, 240, 250);
+
+  .test__leftContainer {
+
+    .test__img {
+      width: 170px;
+      aspect-ratio: 1.5/1;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+  .test__rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    .right_header {
+
+      .test__headerText {
+        font-weight: bold;
+      }
+
+      .test__description {
+        margin-top: 5px;
+      }
+    }
+
+    .right_footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 2rem;
+      width: 100%;
+
+      .test__title {
+        position: relative;
+        border: 1px solid rgb(89, 186, 224);
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: .4s;
+
+        &:hover {
+          transform: translate(-3px, -3px);
+          box-shadow: 3px 3px 0 rgb(89, 186, 224);
+        }
+      }
+    }
+  }
 }

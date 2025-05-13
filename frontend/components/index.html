@@ -2,77 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School</title>
-    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School</title>
+  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
+
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="firstHead">
-            <div class="logo">
-                <img src="../images/logo.png" alt="logo">
-                <a href="">Teach+</a>
-            </div>
-        </div>
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li onclick="location.href='welcome.html'">Գլխավոր</li>
-                <select  onchange="location.href=this.value">
-                <option value="materials5.html">5֊րդ դասարանի տեսական նյութեր</option>
-                <option value="materials6.html">6֊րդ դասարանի տեսական նյութեր</option>
-          </select>
-                    <li onclick="location.href='videos.html'">Տեսադասեր</li>
-                    <select  onchange="location.href=this.value">
-                <option value="lessons5.html">5֊րդ դասարանի Գործնական աշխատանքներ</option>
-                <option value="lessons6.html">6֊րդ դասարանի Գործնական աշխատանքներ</option>
-              </select>
-                                        <select  onchange="location.href=this.value">
-                        <option value="tests5.html">5֊րդ դասարանի թեստեր</option>
-                        <option value="tests6.html">6֊րդ դասարանի թեստեր</option>
-                      </select> 
-                    <li><a href="welcome.html#contactus">Կապ մեզ հետ</a></li>
-                                  <select  onchange="location.href=this.value">
-                <option value="games5.html">5֊րդ դասարանի խաղեր</option>
-                <option value="games6.html">6֊րդ դասարանի խաղեր</option>
-              </select>
-                    <li onclick="location.href='newLessons.html'">նոր դասեր</li>
-                    <li id ="login" onclick="location.href='login.html'">մուտք</li>
-                    <select id="isNotAdmin" onchange="location.href=this.value">
-                        <option ></option>
-                        <option value="createNewLessons.html">Դասերի ստեղծում</option>
-                        <option value="lookContact.html">Նամակներ</option>
-                        <option value="logout">Դուրս գալ</option>
-                      </select>  
-                    </ul>
-                </div>
-            </nav>
-    </header>
-
-
-    <div class="section1">
-        <div class="text">
-            <h1>ԻՆՔՆՈՒՐՈՒՅՆ ԱՇԽԱՏԱՆՔՆԵՐ ԻՆՖՈՐՄԱՏԻԿԱՅԻՑ</h1>
-            <p>Բարև սիրելի աշակերտ, <br>
-                <br>
-
-                Այս կայքը նախատեսված է ինֆորմատիկայի դասերի համար, որտեղ դուք կարող եք ծանոթանալ դասական նյութերին,
-                անցկացնել ինքնուրույն աշխատանքներ և կատարել վարժություններ, որոնք կնպաստեն Ձեր համակարգչային գիտելիքների
-                խորացմանը:
-            </p>
-            <button>Սկսել</button>
-        </div>
-        <div class="video">
-            <img src="../images/video.png" alt="video">
-        </div>
+  <!-- Header -->
+  <header>
+    <div class="firstHead">
+      <div class="logo">
+        <img src="../images/logo.png" alt="logo">
+        <a href="">Teach+</a>
+      </div>
     </div>
 
+    <nav>
+      <div class="navigation">
+        <a class="navigation__link" href="welcome.html">Գլխավոր</a>
 
-    <script src="../script/auth.js"></script>
+        <div class="navigation__link_container">
+          <p class="navigation__link">տեսական նյութեր</p>
+          <div class="navigation__link_container_dropdown">
+            <a class="navigation__link" href="materials5.html">5֊րդ դասարանի տեսական նյութեր</a>
+            <a class="navigation__link" href="materials6.html">6֊րդ դասարանի տեսական նյութեր</a>
+          </div>
+        </div>
+
+        <div class="navigation__link_container">
+          <p class="navigation__link">Տեսադասեր</p>
+          <div class="navigation__link_container_dropdown">
+            <a class="navigation__link" href="videos5.html">5֊րդ դասարանի Տեսադասեր</a>
+            <a class="navigation__link" href="videos6.html">6֊րդ դասարանի Տեսադասեր</a>
+          </div>
+        </div>
+
+        <div class="navigation__link_container">
+          <p class="navigation__link">Գործնական աշխատանքներ</p>
+          <div class="navigation__link_container_dropdown">
+            <a class="navigation__link" href="lessons5.html">5֊րդ դասարանի Գործնական աշխատանքներ</a>
+            <a class="navigation__link" href="lessons6.html">6֊րդ դասարանի Գործնական աշխատանքներ</a>
+          </div>
+
+        </div>
+
+        <div class="navigation__link_container">
+          <p class="navigation__link">թեստեր</p>
+          <div class="navigation__link_container_dropdown">
+            <a class="navigation__link" href="tests5.html">5֊րդ դասարանի թեստեր</a>
+            <a class="navigation__link" href="tests6.html">6֊րդ դասարանի թեստեր</a>
+          </div>
+        </div>
+
+        <a class="navigation__link" href="welcome.html#contactus">Կապ մեզ հետ</a>
+
+        <div class="navigation__link_container">
+          <p class="navigation__link">խաղեր</p>
+          <div class="navigation__link_container_dropdown">
+            <a class="navigation__link" href="games5.html">5֊րդ դասարանի խաղեր</a>
+            <a class="navigation__link" href="games6.html">6֊րդ դասարանի խաղեր</a>
+          </div>
+        </div>
+
+        <a class="navigation__link" href="createNewLessons.html">նոր դասեր</a>
+
+        <a itemid="login" class="navigation__link" id="login" href="login.html">մուտք</a>
+
+        <div id="isNotAdmin" class="navigation__link_container">
+          <a class="navigation__link" href="createNewLessons.html">Դասերի ստեղծում</a>
+          <div class="navigation__link_container_dropdown">
+            <a class="navigation__link" href="lookContact.html">Նամակներ</a>
+            <a class="navigation__link" href="logout.html">Դուրս գալ</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="section1">
+    <div class="text">
+      <h1>ԻՆՔՆՈՒՐՈՒՅՆ ԱՇԽԱՏԱՆՔՆԵՐ ԻՆՖՈՐՄԱՏԻԿԱՅԻՑ</h1>
+      <p>Բարև սիրելի աշակերտ, <br>
+        <br>
+
+        Այս կայքը նախատեսված է ինֆորմատիկայի դասերի համար, որտեղ դուք կարող եք ծանոթանալ դասական նյութերին,
+        անցկացնել ինքնուրույն աշխատանքներ և կատարել վարժություններ, որոնք կնպաստեն Ձեր համակարգչային գիտելիքների
+        խորացմանը:
+      </p>
+      <button>Սկսել</button>
+    </div>
+    <div class="video">
+      <img src="../images/video.png" alt="video">
+    </div>
+  </div>
+
+
+  <script src="../script/auth.js"></script>
 
 </body>
 
